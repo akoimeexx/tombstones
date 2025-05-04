@@ -1,0 +1,18 @@
+{
+    "parent": "akoimeexx:tombstones/root",
+    "display": {
+        "announce_to_chat": true,
+        "description": {"translate": "akoimeexx.tombstones.advancements.died.description", "fallback": "It's only the beginning..."},
+        "frame": "task",
+        "hidden": false,
+        "icon": {"id": "minecraft:mossy_cobblestone_wall"},
+        "show_toast": true,
+        "title": {"translate": "akoimeexx.tombstones.advancements.died.title", "fallback": "Quiet as a Tomb"}
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {"player": {"nbt": "{Health:0.0f}"}}
+        }
+    }
+}

@@ -1,0 +1,1 @@
+execute as @n[tag=tombstone,tag=skull] run function akoimeexx:tombstones/inter/set_headstone_name with entity @s item.components."minecraft:profile"

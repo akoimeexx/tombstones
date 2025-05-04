@@ -1,0 +1,13 @@
+{
+  "parent": "akoimeexx:tombstones/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {"player": {"nbt": "{Health:0.0f}"}}
+    }
+  },
+  "rewards": { 
+    "function": "akoimeexx:tombstones/utility/advancement_trigger", 
+    "recipes": [ "akoimeexx:tombstones/written_book_user_guide" ]
+  }
+}

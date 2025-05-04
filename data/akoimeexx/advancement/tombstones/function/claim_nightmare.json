@@ -1,0 +1,10 @@
+{
+    "parent": "akoimeexx:tombstones/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {"entity": {"nbt": "{Tags:[\"tombstone\",\"reaper\"]}"}}
+        }
+    },
+    "rewards": {"function": "akoimeexx:tombstones/ominous/claim_nightmare"}
+}

@@ -1,0 +1,21 @@
+{
+    "pack": {
+        "pack_format": 57,
+        "supported_formats": {"min_inclusive": 48, "max_inclusive": 57}, 
+        "description": {
+            "type": "translatable", 
+            "translate": "akoimeexx.tombstones.description", 
+            "fallback": "Inventory-saving datapack to prevent item loss on death"
+        }, 
+        "title": {
+            "type": "translatable", 
+            "translate": "akoimeexx.tombstones.title", 
+            "fallback": "Tombstones"
+        }, 
+        "depends": [""], 
+        "author": "akoimeexx", 
+        "version": "4.0.1211", 
+        "license": "BSD-3-CLAUSE", 
+        "url": "https://modrinth.com/datapack/akoi-meexx-tombstones"
+    }
+}

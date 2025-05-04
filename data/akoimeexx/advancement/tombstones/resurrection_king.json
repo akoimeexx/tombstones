@@ -1,0 +1,27 @@
+{
+    "parent": "akoimeexx:tombstones/tomb_raider",
+    "display": {
+        "announce_to_chat": true,
+        "description": {"translate": "akoimeexx.tombstones.advancements.resurrection_king.description", "fallback": "Killed by a mob in every vanilla dimension"},
+        "frame": "challenge",
+        "hidden": true,
+        "icon": {"id": "minecraft:wither_skeleton_skull"},
+        "show_toast": true,
+        "title": {"translate": "akoimeexx.tombstones.advancements.resurrection_king.title", "fallback": "Trifecta of Torment"}
+    },
+    "criteria": {
+        "overworld_death": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {"player": {"location": {"dimension": "minecraft:overworld"}}}
+        },
+        "nether_death": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {"player": {"location": {"dimension": "minecraft:the_nether"}}}
+        },
+        "end_death": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {"player": {"location": {"dimension": "minecraft:the_end"}}}
+        }
+    },
+    "rewards": {"experience": 1000}
+}

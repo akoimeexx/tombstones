@@ -1,0 +1,14 @@
+{
+  "akoimeexx.tombstones.advancements.root.title": "Tombstones", 
+  "akoimeexx.tombstones.advancements.root.description": "When inevitability comes calling", 
+  "akoimeexx.tombstones.advancements.died.title": "Quiet as a Tomb",
+  "akoimeexx.tombstones.advancements.died.description": "It's only the beginning...",
+  "akoimeexx.tombstones.advancements.tomb_raider.title": "Tomb Raider",
+  "akoimeexx.tombstones.advancements.tomb_raider.description": "Does it count if it's your own?",
+  "akoimeexx.tombstones.advancements.dont_fear_the_reaper.title": "Don't fear the Reaper",
+  "akoimeexx.tombstones.advancements.dont_fear_the_reaper.description": "\"If he comes near me, I'm gonna rip his nipples off!\" -Lister, 1-6-9-12-14-6",
+  "akoimeexx.tombstones.advancements.resurrection_king.title": "Trifecta of Torment",
+  "akoimeexx.tombstones.advancements.resurrection_king.description": "Killed by a mob in every vanilla dimension",
+  "akoimeexx.tombstones.interred_position": "Items interred in %s at %s",
+  "akoimeexx.tombstones.player_tombstone": "%s's Tombstone"
+}

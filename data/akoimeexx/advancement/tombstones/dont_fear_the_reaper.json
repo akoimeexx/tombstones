@@ -1,0 +1,19 @@
+{
+    "parent": "akoimeexx:tombstones/tomb_raider",
+    "display": {
+        "announce_to_chat": true,
+        "description": {"translate": "akoimeexx.tombstones.advancements.dont_fear_the_reaper.description", "fallback": "\"If he comes near me, I'm gonna rip his nipples off!\" -Lister, 1-6-9-12-14-6"},
+        "frame": "challenge",
+        "hidden": true,
+        "icon": {"id": "minecraft:diamond_hoe"},
+        "show_toast": true,
+        "title": {"translate": "akoimeexx.tombstones.advancements.dont_fear_the_reaper.title", "fallback": "Don't fear the Reaper"}
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {"entity": {"nbt": "{Tags:[\"tombstone\",\"reaper\"]}"}}
+        }
+    },
+    "rewards": {"experience": 1000}
+}

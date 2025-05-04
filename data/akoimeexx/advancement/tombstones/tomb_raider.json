@@ -1,0 +1,28 @@
+{
+    "parent": "akoimeexx:tombstones/died",
+    "display": {
+        "announce_to_chat": true,
+        "description": {"translate": "akoimeexx.tombstones.advancements.tomb_raider.description", "fallback": "Does it count if it's your own?"},
+        "frame": "goal",
+        "hidden": false,
+        "icon": {"id": "minecraft:skeleton_skull"},
+        "show_toast": true,
+        "title": {"translate": "akoimeexx.tombstones.advancements.tomb_raider.title", "fallback": "Tomb Raider"}
+    },
+    "criteria": {
+        "requirement": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+            "entity": [{
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "minecraft:interaction",
+                "nbt": "{Tags:[\"tombstone\",\"hitbox\"]}"
+            }
+            }]
+        }
+        }
+    },
+    "rewards": {"experience": 100}
+}

@@ -1,0 +1,11 @@
+{
+    "display": {
+        "announce_to_chat": false,
+        "background": "minecraft:textures/block/mossy_cobblestone.png",
+        "description": {"translate": "akoimeexx.tombstones.advancements.root.description", "fallback": "When inevitability comes calling"},
+        "icon": {"id": "minecraft:polished_tuff_wall"},
+        "show_toast": false,
+        "title": {"translate": "akoimeexx.tombstones.advancements.root.title", "fallback": "Tombstones"}
+    },
+    "criteria": {"requirement": {"trigger": "minecraft:tick"}}
+}

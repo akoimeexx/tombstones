@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      { "item": "minecraft:creeper_head" },
+      { "item": "minecraft:dragon_head" },
+      { "item": "minecraft:piglin_head" },
+      { "item": "minecraft:player_head" },
+      { "item": "minecraft:zombie_head" },
+      { "item": "minecraft:skeleton_skull" },
+      { "item": "minecraft:wither_skeleton_skull" }
+    ],
+    { "tag": "minecraft:walls" },
+    { "item": "minecraft:book" }
+  ],
+  "result": {
+    "id": "minecraft:written_book",
+    "components": {
+      "minecraft:written_book_content": {
+        "title": "Tombstones: A User Manual",
+        "author": "The Mad Wizard",
+        "generation": 3,
+        "pages": [
+          "WIP:\n    - Remove glow\n    - Lock/Unlock vault\n    - Report last death || vault location, maybe?"
+        ],
+        "resolved": true
+      }
+    }
+  }
+}
