@@ -1,7 +1,7 @@
 {
     "display": {
         "announce_to_chat": false,
-        "background": "minecraft:textures/block/mossy_cobblestone.png",
+        "background": "minecraft:block/mossy_cobblestone",
         "description": {"translate": "akoimeexx.tombstones.advancements.root.description", "fallback": "When inevitability comes calling"},
         "icon": {"id": "minecraft:polished_tuff_wall"},
         "show_toast": false,

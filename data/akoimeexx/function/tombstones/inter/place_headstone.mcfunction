@@ -32,10 +32,27 @@ execute if entity @s[tag=east] as @n[tag=tombstone,tag=headstone,tag=processing]
 #     If west-facing
 execute if entity @s[tag=west] as @n[tag=tombstone,tag=headstone,tag=processing] at @s run tp @s ^ ^-0.0625 ^-1.125
 #   Place headstone skull
-execute as @n[tag=tombstone,tag=headstone,tag=processing] at @s run summon minecraft:item_display ^0.5 ^0.625 ^0.5625 {item:{id:"minecraft:player_head",count:1},item_display:"fixed",Tags:["tombstone","skull","processing"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.75f,0.75f,0.75f]}}
+execute as @n[tag=tombstone,tag=headstone,tag=processing] at @s run summon minecraft:item_display ^0.5 ^0.625 ^0.5625 { \
+    item:{id:"minecraft:player_head",count:1}, \
+    item_display:"fixed", \
+    Tags:["tombstone","skull","processing"], \
+    "CustomName": {"translate": "akoimeexx.tombstones.player_tombstone","fallback": "%s's Tombstone"}, \
+    transformation:{ \
+        left_rotation:[0f,0f,0f,1f], \
+        right_rotation:[0f,0f,0f,1f], \
+        translation:[0f,0f,0f], \
+        scale:[0.75f,0.75f,0.75f] \
+    } \
+}
 data modify entity @n[tag=tombstone,tag=skull,tag=processing] item.components."minecraft:profile".id set from entity @p UUID
 data modify entity @n[tag=tombstone,tag=skull,tag=processing] Rotation set from entity @s Rotation
-execute as @n[tag=tombstone,tag=skull,tag=processing] at @s run schedule function akoimeexx:tombstones/inter/delayed_headstone_name 4t
+summon minecraft:text_display ~ ~ ~ { \
+    Tags:["tombstone","name"], \
+    transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,0f]}, \
+    text:{"selector":"@p"} \
+}
+data modify entity @n[tag=tombstone,tag=skull,tag=processing] CustomName.with insert 0 from entity @n[type=minecraft:text_display,tag=tombstone,tag=name] text.insertion
+kill @e[type=minecraft:text_display,tag=tombstone,tag=name]
 
 #   Tilt headstone and skull back
 data modify entity @n[tag=tombstone,tag=headstone,tag=processing] Rotation[1] set value -12.5f
