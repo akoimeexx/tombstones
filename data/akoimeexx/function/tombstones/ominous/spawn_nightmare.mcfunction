@@ -1,12 +1,23 @@
 summon minecraft:skeleton_horse ~ ~ ~ { \
+    Health: 30.0f, \
+    attributes:[ \
+        { id: "minecraft:max_health", base: 30d }, \
+        { id: "minecraft:movement_speed", base: 0.3375d }, \
+        { id: "minecraft:movement_efficiency", base: 1d }, \
+        { id: "minecraft:water_movement_efficiency", base: 1d }, \
+        { id: "minecraft:jump_strength", base: 1d }, \
+        { id: "minecraft:safe_fall_distance", base: 32d } \
+    ], \
+    active_effects: [{ id: "minecraft:fire_resistance", amplifier: 0, duration: -1, show_particles: false, show_icon: false, ambient: true }], \
+    DeathLootTable: "minecraft:empty", \
     Tags: ["tombstone", "horse", "boss", "processing"], \
-    ArmorItems: [{ \
-        id: "minecraft:diamond_boots", \
-        count: 1, \
-        components: { \
-            "minecraft:unbreakable": {}, \
-            "minecraft:enchantments": { \
-                levels: { \
+    equipment: { \
+        saddle:{id:"minecraft:saddle",count:1}, \
+        feet: { \
+            id: "minecraft:diamond_boots", \
+            count: 1, \
+            components: { \
+                "minecraft:enchantments": { \
                     "minecraft:protection": 4, \
                     "minecraft:blast_protection": 4, \
                     "minecraft:fire_protection": 4, \
@@ -18,24 +29,13 @@ summon minecraft:skeleton_horse ~ ~ ~ { \
                     "minecraft:thorns": 3, \
                     "minecraft:unbreaking": 3, \
                     "minecraft:mending": 1 \
-                } \
+                }, \
+                "minecraft:unbreakable": {} \
             } \
         } \
-    }, {}, {}, {}], \
-    DeathLootTable: "minecraft:empty", \
-    Health: 30.0f, \
-    SaddleItem: { id: "minecraft:saddle", count: 1 }, \
+    }, \
     Silent: true, \
     Tame: false, \
     Temper: 100, \
-    SkeletonTrap: false, \
-    active_effects: [{ id: "minecraft:fire_resistance", amplifier: 0, duration: -1, show_particles: false, show_icon: false, ambient: true }], \
-    attributes:[ \
-        { id: "minecraft:generic.jump_strength", base: 1.0d }, \
-        { id: "minecraft:generic.max_health", base: 30.0d }, \
-        { id: "minecraft:generic.movement_speed", base: 0.3375d }, \
-        { id: "minecraft:generic.safe_fall_distance", base: 32.0d }, \
-        { id: "minecraft:generic.movement_efficiency", base: 1.0d }, \
-        { id: "minecraft:generic.water_movement_efficiency", base: 1.0d } \
-    ] \
+    SkeletonTrap: false \
 }

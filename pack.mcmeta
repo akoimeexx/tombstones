@@ -1,7 +1,8 @@
 {
     "pack": {
-        "pack_format": 57,
-        "supported_formats": {"min_inclusive": 48, "max_inclusive": 57}, 
+        "pack_format": 101,
+        "min_format": [94, 1], 
+        "max_format": [101, 1],
         "description": {
             "type": "translatable", 
             "translate": "akoimeexx.tombstones.description", 
@@ -14,7 +15,7 @@
         }, 
         "depends": [""], 
         "author": "akoimeexx", 
-        "version": "4.0.1211", 
+        "version": "5.0.262", 
         "license": "BSD-3-CLAUSE", 
         "url": "https://modrinth.com/datapack/akoi-meexx-tombstones"
     }
